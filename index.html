@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create, breed, and battle unique creatures. Powered by Xiaomi MiMo AI." />
+    <meta name="theme-color" content="#050508" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>Creature Lab - AI Powered Breeding Battle Game</title>
+    <style>
+      /* Desktop-only gate */
+      @media (max-width: 1023px) {
+        #mobile-block { display: flex !important; }
+        #root { display: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mobile-block" style="display:none;position:fixed;inset:0;z-index:9999;background:#050508;color:#d0d0e8;font-family:Inter,sans-serif;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:2rem;">
+      <div style="font-size:3rem;margin-bottom:1rem;">🧬</div>
+      <div style="font-size:1.2rem;font-weight:700;margin-bottom:0.5rem;">Desktop Only</div>
+      <div style="font-size:0.85rem;color:#666688;">Creature Lab requires a desktop browser (1024px+).<br/>Please open on a computer.</div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
